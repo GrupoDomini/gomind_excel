@@ -16,7 +16,7 @@ def converter_xls_para_xlsx(
     """Essa funcao abre o aplicativo excel e cria e transforma o xls em xlsx"""
     file_name = "convertendo_excel.xls"
 
-    temp = os.path.join(os.path.dirname(__file__), "temp")
+    temp = os.path.join(os.getcwd(), "temp")
     excel_temp = os.path.join(temp, file_name)  # Caminho do arquivo xls temporario
     excel_temp_xlsx = os.path.join(temp, file_name + "x")
 
